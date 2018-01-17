@@ -6,6 +6,11 @@
 	grid-area: in2;
 }
 
+#input3 {
+	grid-area: in3;
+
+}
+
 #plus {
 	grid-area: pl;
 }
@@ -83,13 +88,38 @@
 	width: 300px;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-areas: 
-		"in1 in2 clear div"
-		"seven eight nine mult"
+		"in1 in2 in3 in3"
+		"seven eight nine pl"
 		"four five six min"
-		"one two three pl"
-		"zr dot plmin eq";
+		"one two three mult"
+		"zr dot clear div"
+		"eq eq eq eq";
 }
 
-input {
-	width: 75px;
+#input1, #input2, #input3 {
+	width: auto;
+	border: 1px solid grey;
 } 
+
+div, button {
+	height: 50px;
+	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 5px;
+}
+
+button {
+	background: green;
+}
+
+button#plus, button#minus, button#multiplied, button#divided {
+	background: blue;
+}
+
+button#clear {
+	background: red;
+}
+
+button#equal {
+	background: yellow;
+}
